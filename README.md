@@ -1,13 +1,15 @@
 ##  ESPAÑOL
-# Bot de Pesca Pro v1.0
+# Bot de Pesca Pro v1.0 (Exclusivo Neverness To Everness)
 
-¡Bienvenido al **Bot Pescador Pro**! La solución definitiva para cuando tienes mejores cosas que hacer que mirar fijamente una barrita de progreso en la pantalla. Este script utiliza visión por computadora (OpenCV) y captura de pantalla ultrarrápida para automatizar el minijuego de pesca en tus juegos favoritos.
+¡Bienvenido al **Bot Pescador Pro**! La solución definitiva para cuando tienes mejores cosas que hacer que mirar fijamente una barrita de progreso en la pantalla. Este script utiliza visión por computadora (OpenCV) y captura de pantalla ultrarrápida para automatizar el minijuego de pesca **única y exclusivamente en el videojuego Neverness To Everness**. 
+
+*(No intentes usarlo en otros juegos, está calibrado específicamente para los colores y mecánicas de NTE).*
 
 Tú le das al _Play_, te vas a hacer tus cosas, y él se encarga de sacar el loot.
 
 ## 🚀 Características Principales
 
--   **Visión por Computadora en Tiempo Real:** Utiliza `OpenCV` y `mss` para analizar el monitor secundario a la velocidad del rayo, detectando los rangos de color HSV del objetivo.
+-   **Visión por Computadora en Tiempo Real:** Utiliza `OpenCV` y `mss` para analizar el monitor secundario a la velocidad del rayo, detectando los rangos de color HSV del objetivo en NTE.
     
 -   **Interfaz Gráfica (GUI) Elegante:** Nada de usar solo la consola oscura. Incluye una ventana siempre visible para controlar el estado del bot.
     
@@ -28,7 +30,7 @@ Tienes dos formas de hacer funcionar esta bestia, dependiendo de si quieres ir a
 
 Para los que quieren farmear ya y dejarse de líos:
 
-1.  Asegúrate de que el juego se está ejecutando (por defecto, el bot mira tu pantalla principal/secundaria según la configuración).
+1.  Asegúrate de que **Neverness To Everness** se está ejecutando (por defecto, el bot mira tu pantalla principal/secundaria según la configuración).
     
 2.  Entra en la carpeta `dist`.
     
@@ -45,19 +47,15 @@ Si quieres modificar las variables, los tiempos o compilarlo tú mismo, necesita
 
 1.  Instala las dependencias necesarias. Abre tu terminal y lanza:
     
-    Bash
-    
-    ```
+```bash
     pip install opencv-python numpy mss pydirectinput keyboard
-    ```
+```
     
 2.  Ejecuta el script desde la consola (preferiblemente como Administrador):
     
-    Bash
-    
-    ```
+```bash
     python bot_pesca.py
-    ```
+```
     
 3.  Controla el bot desde su interfaz o usando la tecla **Q**.
     
@@ -66,7 +64,7 @@ Si quieres modificar las variables, los tiempos o compilarlo tú mismo, necesita
 
 El núcleo del bot crea un área de recorte (ROI - _Region of Interest_) en la zona superior central de la pantalla para ahorrar recursos y ganar FPS de procesado.
 
-Convierte la imagen capturada a espacio de color HSV y aplica dos máscaras:
+Convierte la imagen capturada a espacio de color HSV y aplica dos máscaras específicas de la interfaz de Neverness To Everness:
 
 1.  **Máscara Verde:** Busca la barra de pesca (la zona segura).
     
@@ -79,15 +77,17 @@ Calcula los centros geométricos de ambas máscaras. Si el centro amarillo se de
 ---
 
 ## ENGLISH
-# Pro Fishing Bot v1.0
+# Pro Fishing Bot v1.0 (Neverness To Everness Exclusive)
 
-Welcome to the **Pro Fishing Bot**! The ultimate solution for when you have better things to do than stare at a progress bar on your screen. This script uses computer vision (OpenCV) and lightning-fast screen capture to automate the fishing minigame in your favorite games.
+Welcome to the **Pro Fishing Bot**! The ultimate solution for when you have better things to do than stare at a progress bar on your screen. This script uses computer vision (OpenCV) and lightning-fast screen capture to automate the fishing minigame **strictly and exclusively in the video game Neverness To Everness**. 
+
+*(Do not try to use this on other games; it is specifically calibrated for NTE's colors and mechanics).*
 
 You hit _Play_, go do your thing, and it takes care of farming the loot.
 
 ## 🚀 Main Features
 
--   **Real-Time Computer Vision:** Uses `OpenCV` and `mss` to analyze your secondary monitor at lightning speed, detecting the target's HSV color ranges.
+-   **Real-Time Computer Vision:** Uses `OpenCV` and `mss` to analyze your secondary monitor at lightning speed, detecting the target's HSV color ranges in NTE.
     
 -   **Elegant Graphical Interface (GUI):** No more staring at a dark console. Includes an always-on-top window to easily control the bot's status.
     
@@ -108,7 +108,7 @@ You have two ways to get this beast running, depending on whether you want the f
 
 For those who want to start farming right away and skip the hassle:
 
-1.  Make sure the game is running (by default, the bot looks at your primary/secondary screen depending on the setup).
+1.  Make sure **Neverness To Everness** is running (by default, the bot looks at your primary/secondary screen depending on the setup).
     
 2.  Go into the `dist` folder.
     
@@ -125,23 +125,15 @@ If you want to tweak variables, adjust timings, or compile it yourself, you'll n
 
 1.  Install the necessary dependencies. Open your terminal and run:
     
-    Bash
-    
-    Bash
-    
-    ```
+```bash
     pip install opencv-python numpy mss pydirectinput keyboard
-    ```
+```
     
 2.  Run the script from the console (preferably as Administrator):
     
-    Bash
-    
-    Bash
-    
-    ```
+```bash
     python bot_pesca.py
-    ```
+```
     
 3.  Control the bot from its interface or by using the **Q** key.
     
@@ -150,7 +142,7 @@ If you want to tweak variables, adjust timings, or compile it yourself, you'll n
 
 The bot's core creates a cropping area (ROI - _Region of Interest_) in the top-center part of the screen to save resources and boost processing FPS.
 
-It converts the captured image to the HSV color space and applies two masks:
+It converts the captured image to the HSV color space and applies two specific masks based on Neverness To Everness' UI:
 
 1.  **Green Mask:** Looks for the fishing bar (the safe zone).
     
